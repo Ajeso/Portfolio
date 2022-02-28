@@ -8,3 +8,13 @@ window.addEventListener('scroll', function(){
   }
 });
 
+
+window.addEventListener('scroll', function(){
+
+  
+  if(window.pageYOffset>50) {
+    navbar.span.add("span");
+  } else {
+    navbar.span.remove("span");
+  }
+});

@@ -8,10 +8,10 @@
 #hero {
   height: 100vh;
   width: 100%;
-  background-image: url("assets/img/profile-img.jpg");
   background-size: cover;
   background-position: center;
   background-color: black;
+  z-index: 1000;
 }
 
 #navbar {
@@ -19,6 +19,7 @@
   width: 100%;
   padding: 30px 0px;
   transition: all 0.3s ease;
+  z-index: 1000;
 }
 
 .sticky {
@@ -159,36 +160,70 @@ button:hover {
   border: 2px solid #f9004d;
   cursor: pointer;
 }
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: fit-content;
+}
 /* resume style*/
 
 .resume {
+  margin-top: 10px;
+  display: flex;
+  height: 350px;
+  background-color: #191919;
+  align-content: center;
+  align-items: center;
 }
-.resume p {
+.column h2 {
+  font-size: 25px;
+  color: #f9004d;
+  text-align: center;
+}
+.column p {
   width: 550px;
-  color: black;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
-  margin-bottom: 45px;
-  align-items: left;
+  text-align: center;
+  background-color: none;
 }
+/* skils css*/
 .container {
-  padding-left: 20%;
-  align-items: left;
+  width: 100%;
+  background-color: #ddd;
+  max-height: fit-content;
+  padding: 2px;
+}
+.column h1 {
+  font-size: 25px;
 }
 
 .skills {
-  text-align: left;
+  text-align: right;
+  padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 40%;
-  align-items: right;
+  color: white;
 }
 
-.skills P {
-  text-align: left;
-  padding-left: 10px;
+.html {
+  width: 90%;
+  background-color: #04aa6d;
 }
 
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+
+/*  service section css*/
 .service {
   background-color: #101010;
   width: 100%;
@@ -247,7 +282,7 @@ h5 {
   background-color: #f9004d;
   color: white;
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 10px solid transparent;
   font-weight: bold;
   padding: 9px 22px;
   border-radius: 30px;
@@ -259,6 +294,12 @@ h5 {
   border: 2px solid #f9004d;
   cursor: pointer;
 }
+
+/*Contact css*/
+.contact {
+  align-content: center;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -272,15 +313,6 @@ textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
-}
-
-.container {
-  position: relative;
-  background-color: #191919;
-  padding: 0px 40px 0px 40px;
-  color: rgb(235, 228, 228);
-  align-items: center;
-  justify-content: center;
 }
 
 .col-25 {
@@ -358,5 +390,23 @@ footer .end {
   position: absolute;
   color: #f9004d;
   bottom: 10px;
-  font-size: 5px;
+  font-size: 2px;
+}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
 }
