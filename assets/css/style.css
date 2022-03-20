@@ -449,11 +449,11 @@ h5 {
 }
 
 /*Contact css*/
-.contact {
+#contact {
   align-content: center;
 }
 
-.contact a {
+#contact a {
   text-align: center;
 
   font-style: italic;
