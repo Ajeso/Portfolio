@@ -10,6 +10,33 @@
   --spacing-200: 2rem;
   --spacing-400: 4rem;
 }
+/* Typography */
+.text-5xl {
+  font-size: 4rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.125rem;
+}
+/* Line Height */
+.line-h {
+  line-height: 1.625;
+}
+
+/* Align-text */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
 
 /* Fonts */
 .text-bold {
@@ -28,7 +55,9 @@
 .bg-black {
   background-color: var(--color-black);
 }
-
+.bg-red {
+  background-color: var(--color-red-crayola);
+}
 /* Layout */
 .flex {
   display: flex;
@@ -86,6 +115,10 @@
   padding-left: var(--spacing-400);
   padding-right: var(--spacing-400);
 }
+.px-200 {
+  padding-left: var(--spacing-200);
+  padding-right: var(--spacing-200);
+}
 
 .py-200 {
   padding-top: var(--spacing-200);
@@ -119,8 +152,6 @@
 /* Paragraphs */
 p {
   margin: 0;
-  line-height: 3em;
-  font-size: 16px;
 }
 
 /* Headings */
@@ -131,24 +162,65 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-size: 45px;
-  font-weight: 800;
 }
 span {
   color: var(--color-red-crayola);
 }
-/*  
+
+/* Position */
+.absolute {
+  position: absolute;
+}
+
 .sticky {
-  position: fixed;
-  background-color: var(--color-red-crayola);
-  z-index: 1000;
+  position: sticky;
+}
+
+.relative {
+  position: relative;
+}
+
+/* Z-index */
+.z-50 {
+  z-index: 50;
+}
+.z-30 {
+  z-index: 30;
+}
+
+/* flex-direction */
+.flex-col {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+/* Borders*/
+.rounded-full {
+  border-radius: 35px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+/* Width */
+.w-full {
   width: 100%;
 }
- */
-.btn {
-  background-color: var(--color-red-crayola);
-  color: var(--color-white);
-  border: 2px solid transparent;
-  padding: 15px 30px;
-  border-radius: 30px;
+.w-4 {
+  width: 90%;
+}
+
+.w-3 {
+  width: 85%;
+}
+.w-2 {
+  width: 30%;
+}
+
+/* Height */
+.h-full {
+  height: 100vh;
 }
