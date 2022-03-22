@@ -18,6 +18,9 @@
 .text-4xl {
   font-size: 2.25rem;
 }
+.text-3xl {
+  font-size: 2rem;
+}
 
 .text-xl {
   font-size: 1.125rem;
@@ -42,6 +45,9 @@
 .text-bold {
   font-weight: bold;
 }
+.italic {
+  font-style: italic;
+}
 
 /* Colors */
 .text-black {
@@ -62,13 +68,22 @@
 .flex {
   display: flex;
 }
-
+/* flex-direction */
+.flex-col {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
 .items-center {
   align-items: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+.space-x-2 {
+  margin-left: 0.5rem;
 }
 
 .inner-div {
@@ -173,7 +188,7 @@ span {
 }
 
 .sticky {
-  position: sticky;
+  position: fixed;
 }
 
 .relative {
@@ -188,21 +203,14 @@ span {
   z-index: 30;
 }
 
-/* flex-direction */
-.flex-col {
-  flex-direction: column;
-}
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 /* Borders*/
 .rounded-full {
-  border-radius: 35px;
+  border-radius: 30px;
 }
 
 .border-solid {
   border-style: solid;
+  border-color: var(--color-black);
 }
 
 /* Width */
@@ -219,8 +227,28 @@ span {
 .w-2 {
   width: 30%;
 }
+.w-5 {
+  width: 50%;
+}
+.w-6 {
+  width: 20%;
+}
 
 /* Height */
 .h-full {
   height: 100vh;
+}
+
+.h-1 {
+  height: 2rem;
+}
+.h-2 {
+  height: 6rem;
+}
+.h-3 {
+  height: 3rem;
+}
+.icon {
+  font-size: 36px;
+  height: 49px;
 }

@@ -15,8 +15,8 @@
 
 <body>
 
-    <header class="bg-black py-200 sticky">
-        <div class="inner-div flex items-center justify-between ">
+    <header class="bg-black py-200 sticky w-full">
+        <div class="inner-div flex items-center justify-between">
             <div class="text-white">
                 <h1> Monicah <span>Ajeso</span></h1>
             </div>
@@ -38,9 +38,7 @@
                 <p>Hello my name is</p>
                 <h2 class="text-5xl">Monicah Ajeso</h2>
                 <p>I'm a Front-End Web Developer</p>
-                <a href="#contact">
-                    <button class="btn border-solid rounded-full bg-red px-200">Contact Me</button>
-                </a>
+                <input class="border-solid rounded-full bg-red w-6 h-3" type="submit" value="Submit">
             </div>
         </div>
     </section>
@@ -72,36 +70,31 @@
 
 
     <section id="skills" class="bg-black text-white pt-400">
-        <div class="inner-div flex-1 flex-col">
-            <div class="p-400">
+        <div class="inner-div flex items-center justify-between">
+            <div class="w-5 px-200">
                 <h2 class="text-5xl">Monicah Ajeso</h2>
-                <p class="text-xl line-h text-center">I am a sel-taught developer. I decided to switch my career last
-                    year
-                    and chose web
-                    development
-                    because I
-                    have always wanted to be a software engineer ever since I understood the meaning of Software
-                    Engineering. It is a long road and it requires a lot of patience and dedication. I am prepared to
-                    put in
-                    the hard work.</p>
+                <p class="text-xl line-h ">I am a self-taught developer. I decided to switch my career last
+                    year and chose web development because I have always wanted to be a software engineer ever since I
+                    understood the meaning of Software Engineering. It is a long road and it requires a lot of patience
+                    and dedication. I am prepared to put in the hard work.</p>
             </div>
 
-            <div class="text-white">
+            <div class="text-white w-5">
                 <h2 class="text-5xl">My Skills</h2>
 
                 <p>HTML</p>
                 <div class="w-full pb-400 ">
-                    <div class="html w-4 bg-red">90%</div>
+                    <div class="html w-4 bg-red pl-400">90%</div>
                 </div>
 
                 <p>CSS</p>
                 <div class="w-full pb-400">
-                    <div class="css w-3 bg-red">85%</div>
+                    <div class="css w-3 bg-red ">85%</div>
                 </div>
 
                 <p>JavaScript</p>
                 <div class="w-full pb-400">
-                    <div class="js w-2 bg-red">30%</div>
+                    <div class="js w-2 bg-red ">30%</div>
                 </div>
             </div>
         </div>
@@ -110,43 +103,80 @@
 
 
 
-    <section id="service" class="bg-black text-white items-center">
+    <section id="service" class="bg-black py-200 text-white items-center">
         <div>
             <h2 class="text-5xl text-center text-bold">My Services</h2>
         </div>
 
-        <div class="inner-div flex flex-1  items-center justify-between">
-            <div class="line-h ">
-                <i class="fa-solid fa-code"></i>
-                <h5>Web Master</h5>
+        <div class="inner-div flex items-center justify-between spcace-x-2">
+            <div class="line-h px-200">
+                <i class="fa-regular fa-code"></i>
+                <h5 class="text-3xl">Web Master</h5>
                 <p>Every website should be built with two primary goals. First it needs to work across all devices,
                     secondly it needs to be as fast as possible.</p>
             </div>
 
-            <div class="line-h">
-                <i class="fa-solid fa-at"></i>
-                <h5>Email Marketing Templates</h5>
+            <div class="line-h px-200">
+                <i class="fa-solid fa-at text-center"></i>
+                <h5 class="text-3xl">Email Marketing Templates</h5>
                 <p>Every website should be built with two primary goals. First it needs to work across all devices,
                     secondly it needs to be as fast as possible.</p>
             </div>
 
-            <div class="line-h">
+            <div class="line-h px-200">
                 <i class="fa-solid fa-bell"></i>
-                <h5>Content Creator</h5>
+                <h5 class="text-3xl">Content Creator</h5>
                 <p>Every website should be built with two primary goals. First it needs to work across all devices,
                     secondly it needs to be as fast as possible.</p>
             </div>
-
 
         </div>
-
-
-
-
-
     </section>
-    <section id="contact"></section>
-    <footer></footer>
+
+
+
+
+
+    <section id="contact" class=" bg-black text-white py-400">
+        <div class="inner-div flex items-center justify-between">
+            <div class="w-5">
+                <p class="text-4xl line-h"> You can reach me through:</p>
+                <p class="text-3xl line-h">Phone Number:</p>
+                <a href="+250781482005"> +250781482005</a>
+
+                <p class="text-3xl line-h">Email:</p>
+                <a href="ajeso6827@gmail.com"> ajeso6827@gmail.com</a><br>
+
+                <a href="https://twitter.com/MonicahAjeso?t=GF4oGRvFieL4qpmQLpVZPg&s=09"><i
+                        class="fa-brands fa-twitter icon pt-400"></i></a>
+                <a href="https://github.com/Ajeso"><i class="fa-brands fa-github icon"></i></a>
+                <a href="https://www.linkedin.com/in/monicah-ajeso-b1a083198/"><i
+                        class="fa-brands fa-linkedin icon"></i></a>
+            </div>
+            <div class="w-5 ">
+                <form class="flex flex-col justify-between" action="/action_page.php">
+                    <label class="text-3xl" for="name"> Name:</label>
+                    <input class="h-1 w-3 " type="text" name="Name" placeholder="Your Name">
+                    <label class="text-3xl" for="Email">Email:</label>
+                    <input class="h-1 w-3" type="text" name="email" placeholder="Email">
+
+                    <label class="text-3xl mx-0" for="Mesage">Message</label>
+                    <textarea class="h-2 w-3" name="Message" placeholder="Write something.."></textarea>
+
+
+                    <input class="border-solid rounded-full bg-red w-6 h-3" type="submit" value="Submit">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bg-black text-white py-400 items-center">
+        <p class="text-center text-3xl italic font-bold ">&copy;Monicah Ajeso</p>
+        </div>
+    </footer>
 </body>
 
 </html>
