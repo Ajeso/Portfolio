@@ -34,11 +34,11 @@
 
     <section id="home" class="bg-black text-white">
         <div class="inner-div pt-400">
-            <div class="py-200 items-center line-h text-4xl">
+            <div class="py-200 items-center pl-400 line-h text-4xl">
                 <p>Hello my name is</p>
                 <h2 class="text-5xl">Monicah Ajeso</h2>
                 <p>I'm a Front-End Web Developer</p>
-                <input class="border-solid rounded-full bg-red w-6 h-3" type="submit" value="Submit">
+                <input class="border-solid rounded-full bg-red w-6 h-3" type="submit" value="Contact Me">
             </div>
         </div>
     </section>
@@ -50,7 +50,7 @@
     <section id="about" class="bg-black text-white">
         <div class="inner-div flex items-center justify-between ">
             <div>
-                <img src="assets/img/profile-img.jpg" alt="blank">
+                <img src="assets/img/profile-img.jpg" class="rounded-half" alt="blank">
             </div>
             <div class="px-200">
                 <h2 class="text-5xl">About Me</h2>
@@ -84,17 +84,17 @@
 
                 <p>HTML</p>
                 <div class="w-full pb-400 ">
-                    <div class="html w-4 bg-red pl-400">90%</div>
+                    <div class="html w-4 bg-red pl-400 h-1">90%</div>
                 </div>
 
                 <p>CSS</p>
                 <div class="w-full pb-400">
-                    <div class="css w-3 bg-red ">85%</div>
+                    <div class="css w-3 bg-red  h-1">85%</div>
                 </div>
 
                 <p>JavaScript</p>
                 <div class="w-full pb-400">
-                    <div class="js w-2 bg-red ">30%</div>
+                    <div class="js w-2 bg-red h-1 ">30%</div>
                 </div>
             </div>
         </div>
@@ -110,21 +110,35 @@
 
         <div class="inner-div flex items-center justify-between spcace-x-2">
             <div class="line-h px-200">
-                <i class="fa-regular fa-code"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-2 text-red" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
                 <h5 class="text-3xl">Web Master</h5>
                 <p>Every website should be built with two primary goals. First it needs to work across all devices,
                     secondly it needs to be as fast as possible.</p>
             </div>
 
+
             <div class="line-h px-200">
-                <i class="fa-solid fa-at text-center"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-2 text-red" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                        clip-rule="evenodd" />
+                </svg>
                 <h5 class="text-3xl">Email Marketing Templates</h5>
                 <p>Every website should be built with two primary goals. First it needs to work across all devices,
                     secondly it needs to be as fast as possible.</p>
             </div>
 
+
             <div class="line-h px-200">
-                <i class="fa-solid fa-bell"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-2 text-red" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+                </svg>
                 <h5 class="text-3xl">Content Creator</h5>
                 <p>Every website should be built with two primary goals. First it needs to work across all devices,
                     secondly it needs to be as fast as possible.</p>
@@ -178,5 +192,6 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>

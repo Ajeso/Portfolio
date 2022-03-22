@@ -53,6 +53,9 @@
 .text-black {
   color: var(--color-black);
 }
+.text-red {
+  color: var(--color-red-crayola);
+}
 
 .text-white {
   color: var(--color-white);
@@ -191,21 +194,12 @@ span {
   position: fixed;
 }
 
-.relative {
-  position: relative;
-}
-
-/* Z-index */
-.z-50 {
-  z-index: 50;
-}
-.z-30 {
-  z-index: 30;
-}
-
 /* Borders*/
 .rounded-full {
   border-radius: 30px;
+}
+.rounded-half {
+  border-radius: 85%;
 }
 
 .border-solid {
