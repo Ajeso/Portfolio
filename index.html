@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Monicah Ajeso-Web-Developer</title>
 
 
     <link rel="stylesheet" href="assets/css/modern-normalize.min.css">
@@ -32,13 +32,15 @@
         </div>
     </header>
 
-    <section id="home" class="bg-black text-white">
+    <section id="home" class="bg-black text-white py-800">
         <div class="inner-div pt-400">
             <div class="py-200 items-center pl-400 line-h text-4xl">
                 <p>Hello my name is</p>
                 <h2 class="text-5xl">Monicah Ajeso</h2>
                 <p>I'm a Front-End Web Developer</p>
-                <input class="border-solid rounded-full bg-red w-6 h-3" type="submit" value="Contact Me">
+                <a href="#contact">
+                    <button class="border-solid border color rounded-full bg-red w-6 h-3 space-y-200 ">Contact
+                        Me</button></a>
             </div>
         </div>
     </section>
@@ -47,12 +49,12 @@
 
 
 
-    <section id="about" class="bg-black text-white">
+    <section id="about" class="bg-black text-white py-800">
         <div class="inner-div flex items-center justify-between ">
-            <div>
-                <img src="assets/img/profile-img.jpg" class="rounded-half" alt="blank">
+            <div class="w-3\/12">
+                <img src="assets/img/profile-img.jpg" class="rounded-half w-max block" alt="blank">
             </div>
-            <div class="px-200">
+            <div class="px-200 w-9\/12">
                 <h2 class="text-5xl">About Me</h2>
                 <h3 class="text-5xl py-200">Web Developer &amp; <span>Content Creator</span></h3>
                 <p class="text-xl line-h ">Hello,I'm a Front-End Web Developer with a passion for web applications.
@@ -69,46 +71,60 @@
 
 
 
-    <section id="skills" class="bg-black text-white pt-400">
-        <div class="inner-div flex items-center justify-between">
-            <div class="w-5 px-200">
-                <h2 class="text-5xl">Monicah Ajeso</h2>
-                <p class="text-xl line-h ">I am a self-taught developer. I decided to switch my career last
-                    year and chose web development because I have always wanted to be a software engineer ever since I
-                    understood the meaning of Software Engineering. It is a long road and it requires a lot of patience
+    <section id="skills" class="bg-black text-white py-800">
+        <div class="inner-div flex justify-between">
+            <div class="w-5 ">
+                <h2 class="text-5xl space-y-200 ">Monicah Ajeso</h2>
+
+                <p class="text-xl line-h">I am a self-taught developer. I decided to switch my career last
+                    year and chose web development because I have always wanted to be a software engineer ever since
+                    I
+                    understood the meaning of Software Engineering. It is a long road and it requires a lot of
+                    patience
                     and dedication. I am prepared to put in the hard work.</p>
+
             </div>
 
-            <div class="text-white w-5">
-                <h2 class="text-5xl">My Skills</h2>
+            <div class="text-white w-5 space-x-100">
+                <h2 class="text-5xl space-y-200">My Skills</h2>
 
-                <p>HTML</p>
-                <div class="w-full pb-400 ">
-                    <div class="html w-4 bg-red pl-400 h-1">90%</div>
+                <div class="space-y-200">
+                    <p>HTML</p>
+                    <div class="w-full">
+                        <div class="html w-4 bg-red  h-1">90%</div>
+                    </div>
                 </div>
 
-                <p>CSS</p>
-                <div class="w-full pb-400">
-                    <div class="css w-3 bg-red  h-1">85%</div>
+                <div class="space-y-200">
+                    <p>CSS</p>
+                    <div class="w-full">
+                        <div class="css w-3 bg-red  h-1">85%</div>
+                    </div>
                 </div>
 
-                <p>JavaScript</p>
-                <div class="w-full pb-400">
-                    <div class="js w-2 bg-red h-1 ">30%</div>
+                <div class="space-y-200">
+                    <p>JavaScript</p>
+                    <div class="w-full">
+                        <div class="js w-2 bg-red h-1 ">30%</div>
+                    </div>
                 </div>
+
+
             </div>
+
+        </div>
         </div>
     </section>
 
 
 
 
-    <section id="service" class="bg-black py-200 text-white items-center">
+    <section id="service" class="bg-black py-800 text-white items-center">
         <div>
-            <h2 class="text-5xl text-center text-bold">My Services</h2>
+            <h2 class="text-5xl text-center text-bold space-y-200">My Services</h2>
         </div>
 
-        <div class="inner-div flex items-center justify-between spcace-x-2">
+        <div class="inner-div flex items-center justify-between spcace-x-200">
             <div class="line-h px-200">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-2 text-red" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
@@ -151,24 +167,31 @@
 
 
 
-    <section id="contact" class=" bg-black text-white py-400">
+    <section id="contact" class=" bg-black text-white py-800">
         <div class="inner-div flex items-center justify-between">
-            <div class="w-5">
-                <p class="text-4xl line-h"> You can reach me through:</p>
-                <p class="text-3xl line-h">Phone Number:</p>
-                <a href="+250781482005"> +250781482005</a>
+            <div class="w-5 ">
+                <div>
+                    <p class="text-4xl line-h"> You can reach me through:</p>
+                    <p class="text-3xl line-h">Phone Number:</p>
+                    <a class="text-red text-xl" href="tel:+250781482005"> +250781482005</a>
 
-                <p class="text-3xl line-h">Email:</p>
-                <a href="ajeso6827@gmail.com"> ajeso6827@gmail.com</a><br>
+                    <p class="text-3xl line-h ">Email:</p>
+                    <a class="text-red text-xl " href="mailto:ajeso6827@gmail.com"> ajeso6827@gmail.com</a>
+                </div>
 
-                <a href="https://twitter.com/MonicahAjeso?t=GF4oGRvFieL4qpmQLpVZPg&s=09"><i
-                        class="fa-brands fa-twitter icon pt-400"></i></a>
-                <a href="https://github.com/Ajeso"><i class="fa-brands fa-github icon"></i></a>
-                <a href="https://www.linkedin.com/in/monicah-ajeso-b1a083198/"><i
-                        class="fa-brands fa-linkedin icon"></i></a>
+
+                <div class="space-x-200">
+                    <a href="https://twitter.com/MonicahAjeso?t=GF4oGRvFieL4qpmQLpVZPg&s=09"><i
+                            class="fa-brands fa-twitter icon pt-400 text-white"></i></a>
+                    <a href="https://github.com/Ajeso"><i class="fa-brands fa-github icon text-white"></i></a>
+                    <a href="https://www.linkedin.com/in/monicah-ajeso-b1a083198/"><i
+                            class="fa-brands fa-linkedin icon text-white"></i></a>
+
+                </div>
+
             </div>
             <div class="w-5 ">
-                <form class="flex flex-col justify-between" action="/action_page.php">
+                <form class="flex flex-col justify-between" action="">
                     <label class="text-3xl" for="name"> Name:</label>
                     <input class="h-1 w-3 " type="text" name="Name" placeholder="Your Name">
                     <label class="text-3xl" for="Email">Email:</label>
@@ -178,7 +201,8 @@
                     <textarea class="h-2 w-3" name="Message" placeholder="Write something.."></textarea>
 
 
-                    <input class="border-solid rounded-full bg-red w-6 h-3" type="submit" value="Submit">
+                    <input class="border-solid border color rounded-full bg-red w-6 h-3 space-y-200" type="submit"
+                        value="Submit">
                 </form>
 
             </div>
@@ -187,7 +211,7 @@
 
 
 
-    <footer class="bg-black text-white py-400 items-center">
+    <footer class="bg-black text-white py-800 items-center">
         <p class="text-center text-3xl italic font-bold ">&copy;Monicah Ajeso</p>
         </div>
     </footer>
