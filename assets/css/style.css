@@ -224,6 +224,7 @@ span {
 
 .border-solid {
   border-style: solid;
+  border: 0px;
 }
 .border-color {
   color: var(--color-black);
@@ -276,4 +277,37 @@ span {
 .icon {
   font-size: 36px;
   height: 49px;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section {
+    width: 120%;
+  }
+  footer {
+    width: 120%;
+  }
+  button {
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section {
+    width: 120%;
+  }
+  footer {
+    width: 120%;
+  }
+  button {
+    border-radius: 5px;
+    font-size: 12px;
+  }
 }
