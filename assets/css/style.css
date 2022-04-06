@@ -11,6 +11,9 @@
   --spacing-400: 4rem;
 }
 /* Typography */
+.no-underline {
+  text-decoration-line: none;
+}
 .text-5xl {
   font-size: 4rem;
 }
@@ -126,13 +129,14 @@ img {
 .space-x-100 > *:not(:first-child) {
   margin-left: var(--spacing-100);
 }
+.space-y-100 > *:not(:first-child) {
+  margin-top: var(--spacing-100);
+}
 .space-x-200 > *:not(:first-child) {
   margin-left: var(--spacing-200);
 }
 .space-y-200 {
   margin-bottom: var(--spacing-200);
-}
-.space-y-200 {
   margin-top: var(--spacing-200);
 }
 
